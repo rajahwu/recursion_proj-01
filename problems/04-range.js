@@ -12,7 +12,10 @@ range(7, 6); // []
 
 
 function range(start, end) {
-  // Your code here
+  let result = [];
+  if(result.length === end - start) return [];
+  result.push(start)
+  return range(start)+1
 }
 
 
