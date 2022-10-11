@@ -14,9 +14,19 @@ iceCreamShop([], 'honey lavender'); // false
 
 
 function iceCreamShop(flavors, favorite) {
-  // Your code here
+  // Your code 
+  debugger
+  // console.log(flavors)
+  if (flavors.length === 0) return false
+  debugger
+  let iceCream = flavors.pop()
+  // console.log(iceCream)
+  if (iceCream === favorite) return true
+  debugger
+  return iceCreamShop(flavors, favorite)
 }
 
+console.log(iceCreamShop(['vanilla', 'strawberry'], 'blue moon'));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
