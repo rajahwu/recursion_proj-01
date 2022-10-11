@@ -16,7 +16,7 @@ function sumToN(n) {
   // Your code here
   debugger
   if (n <= 0) return null // base case
-  // console.log(n) 
+  // console.log(n)  
   debugger                      // recurise case
   return sumToN(n - 1) + n   // recurise step         
 }
