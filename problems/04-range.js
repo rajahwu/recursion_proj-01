@@ -11,13 +11,19 @@ range(7, 6); // []
 ***********************************************************************/
 
 
-function range(start, end) {
-  let result = [];
-  if(result.length === end - start) return [];
+function range(start, end, result = []) {
+  debugger
+  let base = end - start
+  if (base <= 0) return result;
+  debugger
   result.push(start)
-  return range(start)+1
+  debugger
+  return range(start + 1, end, result)
 }
 
+console.log(range(1, 5)); // [1, 2, 3, 4]
+// console.log(range(3, 4)); // [3]
+// console.log(range(7, 6)); // []
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
